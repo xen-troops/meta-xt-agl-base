@@ -56,6 +56,8 @@ BBMASK .= "|meta-rcar-gen3/recipes-bsp/alsa-state/alsa-state.bbappend"
 
 # Provide own pulseaudio configuration
 BBMASK .= "|meta-agl-devel/ATTIC/meta-audio-4a-framework/recipes-multimedia/pulseaudio/pulseaudio_%.bbappend"
+BBMASK .= "|bsp/meta-rcar/meta-rcar-gen3-adas/recipes-multimedia/pulseaudio/pulseaudio_12_2.bbappend"
+BBMASK .= "|meta-agl/meta-agl-profile-core/recipes-multimedia/pulseaudio/pulseaudio_%.bbappend"
 
 OSTREE_BOOTLOADER ?= "u-boot"
 BB_DANGLINGAPPENDS_WARNONLY = "yes"
