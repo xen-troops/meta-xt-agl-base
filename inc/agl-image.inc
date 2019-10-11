@@ -4,7 +4,6 @@ IMAGE_INSTALL_append = " \
     guest-addons-bridge-up-notification-service \
     guest-addons-bridge-config \
     kmscube \
-    aos-vis \
     logrotate \
     pulseaudio \
     alsa-utils \
