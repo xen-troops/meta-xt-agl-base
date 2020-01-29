@@ -37,6 +37,19 @@ DEPENDS += " u-boot"
 # So, we provide machine overrides from this build to Dom0
 EXTRA_IMAGEDEPENDS += " domd-install-machine-overrides"
 
+# We use systemd-networkd so we need to remove connman
+IMAGE_INSTALL_remove = " \
+    connman \
+    connman-client \
+    connman-tests \
+    connman-tools \
+    connman-ncurses \
+    connman-conf \
+    connman-gnome \
+    cluster-connman-conf \
+    libconnman-qt5_git \
+"
+
 # Do not support secure environment
 IMAGE_INSTALL_remove = " \
     optee-linuxdriver \
