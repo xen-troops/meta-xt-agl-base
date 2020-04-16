@@ -26,7 +26,7 @@ IMAGE_INSTALL_append = " \
 "
 
 # Configuration for ARM Trusted Firmware
-EXTRA_IMAGEDEPENDS += " arm-trusted-firmware"
+EXTRA_IMAGEDEPENDS += " arm-trusted-firmware optee-os"
 
 # u-boot
 DEPENDS += " u-boot"
