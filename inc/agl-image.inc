@@ -20,9 +20,9 @@ IMAGE_INSTALL_append = " \
     nftables \
     ntpdate-systemd \
     tzdata \
-    xen-base \
-    xen-flask \
-    xen-xenstat \
+    xen-tools \
+    xen-tools-flask \
+    xen-tools-xenstat \
 "
 
 # Configuration for ARM Trusted Firmware
